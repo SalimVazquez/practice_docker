@@ -11,6 +11,9 @@ jobs:
      steps:
      - checkout
      - run:
-     name: Hello World
-     command: |
-     java AC.java
+      name: Hello World
+      command: |
+      javac AC.java
+     - run:
+      command: |
+      java AC
