@@ -9,8 +9,6 @@ version: 2
        - image: circleci/openjdk:8
      steps:
        - checkout
-       - restore_cache:
-          key: v1-gradle-cache-{{ checksum "build.gradle" }}
        - run:
         name: Hello World
           command: |
