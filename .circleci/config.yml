@@ -2,16 +2,17 @@ version: 2
 jobs:
    build:
      # parallelism: 2
-     environment:
-     # Configure the JVM and Gradle to avoid OOM errors
-       _JAVA_OPTIONS: "-Xmx3g"
-       GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.workers.max=2"
-     docker:
-       - image: circleci/openjdk:11.0.3-jdk-stretch
-     steps:
-     - checkout
-     - run:
-         name: Make
-         command:
-         javac AC.java
-         java AC
+    environment:
+    # Configure the JVM and Gradle to avoid OOM errors
+        _JAVA_OPTIONS: "-Xmx3g"
+        GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.workers.max=2"
+    docker:
+        - image: circleci/openjdk:8
+    steps:
+        - checkout
+        - run:
+            name: Make
+            command: javac AC.java
+        - run:
+            name: Make
+            command: java AC
