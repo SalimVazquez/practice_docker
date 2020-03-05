@@ -12,9 +12,6 @@ jobs:
      - checkout
      - run:
          name: Make
-         command: |
+         command:
          javac AC.java
-     - run:
-         name: Execute
-         command: |
          java AC
