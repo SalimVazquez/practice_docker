@@ -9,8 +9,8 @@ jobs:
      docker:
        - image: circleci/openjdk:8
      steps:
-       - checkout
-       - run:
-        name: Hello World
-          command: |
-            java AC.java
+     - checkout
+     - run:
+     name: Hello World
+     command: |
+     java AC.java
