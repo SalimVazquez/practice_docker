@@ -6,8 +6,8 @@ git clone https://github.com/SalimVazquez/practice_docker.git
 ````
 
 ## Requirements 📋
- - (Docker)[https://docs.docker.com/install/]
- - (docker-compose)[https://docs.docker.com/compose/install/]
+ - [Docker](https://docs.docker.com/install/)
+ - [docker-compose](https://docs.docker.com/compose/install/)
 
 ## Build 🛠️
 ```bash
